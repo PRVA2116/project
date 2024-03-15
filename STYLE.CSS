@@ -1,0 +1,210 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,#12c2e9,#c47,#f64f59);
+    background: #316cfe;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.container{
+    position: relative;
+}
+.drop{
+    height: 200px;
+    width: 200px;
+    background: blue;
+    border-radius: 51% 49% 48% 52% / 62% 44% 56% 62%;
+    border: 2px solid #3d93ff;
+    opacity: .8;
+    position: absolute;
+}
+
+.drop::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #318cfe;
+    box-shadow: -20px 30px 16px #1b6cfb,40px 60px 32px #1b6cfb,inset 6px 6px 10px #1b6cfb,inset 2px 6px 10px #1b6cfb,inset 20px -20px #fff,inset 40px -40px 44px #a8ceff;
+    border-radius:51% 49% 48% 52% / 62% 44% 56% 62%; 
+}
+
+.drop::after{
+    content: '';
+    position:absolute;
+    height: 40px;
+    width: 40px;
+    background: white;
+    border-radius:44% 56% 46% 54%  / 36% 50% 50% 64%;
+    left: 130px;
+    top: 40px;
+    box-shadow: 16px 40px 0 -10px white;
+    opacity: .8;
+}
+
+.drop1{
+    left: -300px;
+}
+
+.drop2{
+    right: -300px;
+    z-index: -1;
+    border-radius: 46% 50% 39% 54% / 56% 57% 50% 50%;
+
+}
+.drop2::before{
+    border-radius: 46% 50% 39% 54% / 56% 57% 50% 50%;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 40px 20px ;
+    background: #318cf3;
+    box-shadow: -5px 5px 3px blue,-30px 30px 22px blue,20px 30px 16px blue,40px 60px 32px blue;
+    background: rgba(255,255,255,0,28);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0,3);
+}
+
+h1{
+    margin-top: 0;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 1px rgba(0,0,0,25);
+
+}
+
+input{
+    margin-top: 0;
+    height: 30px;
+    width: 300px;
+    margin-bottom: 40px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color:#fff;
+    
+}
+
+input::placeholder{
+    color: white;
+}
+
+button{
+    height: 30px;
+    border: 1px solid rgba(255,255,255,0.8);
+    background: transparent;
+    color: #fff;
+    box-shadow:4px 4px 3px rgba(255,255,255,0,25) ;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.bg-bubbles{
+    position: absolute;
+    top: 0;
+    left: o;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+li{
+    position: absolute;
+    list-style: none;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.15);
+    bottom: -160px;
+    animation: square 25s infinite;
+}
+
+@keyframes square{
+    0%{
+      transform: translateY(0);  
+    }
+    100%{
+        transform: translateY(-700px) rotate(600deg);  
+      }
+
+    
+}
+
+li:nth-child(1){
+    left: 10%;
+}
+li:nth-child(2){
+    left: 20%;
+    animation-duration: 17s;
+    animation-delay: 2s;
+    width: 80px;
+    height: 80px;
+
+}
+li:nth-child(3){
+    left: 20%;
+    animation-duration: 20s;
+    animation-delay: 3s;
+    width: 20%;
+    background: rgba(255,255,255,0.2);
+}
+li:nth-child(4){
+    left: 40%;
+    animation-duration: 20s;
+    animation-delay: 5s;
+    width: 50px;
+    background: rgba(255,255,255,0.2);
+}
+li:nth-child(5){
+    left: 32%;
+    animation-duration: 20s;
+    animation-delay: 3s;
+    width: 70px;
+    background: rgba(255,255,255,0.2);
+}
+li:nth-child(6){
+    left: 40%;
+    animation-duration: 20s;
+    animation-delay: 7s;
+    width: 100px;
+    background: rgba(255,255,255,0.2);
+}
+li:nth-child(7){
+    left: 45%;
+    animation-duration: 20s;
+    animation-delay: 10s;
+    width: 120px;
+    background: rgba(255,255,255,0.2);
+}
+li:nth-child(8){
+    left: 50%;
+    animation-duration: 20s;
+    animation-delay: 15s;
+    width: 160px;
+    background: rgba(255,255,255,0.2);
+}
+li:nth-child(9){
+    left: 65%;
+    animation-duration: 20s;
+    animation-delay: 20s;
+    width: 200px;
+    background: rgba(255,255,255,0.2);
+}
+li:nth-child(10){
+    left:85%;
+    animation-duration: 20s;
+    animation-delay: 25s;
+    width: 250px;
+    background: rgba(255,255,255,0.2);
+}
